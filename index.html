@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My Portfolio
+    </title>
+    <link rel ="icon" href = "./style/img/kid-alphabet-latin-l-letter-child-512.jpg" type = "image/x-icon"> 
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- Boostrap4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Animated.js -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- OnScroll AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <header class="myHead">
+        <div class="myNav animate__animated animate__fadeInUp">
+            <div class="nav-myName " >LONG</div>
+            <div class="nav-linkWrap" id="nav-linkWrap">
+                <a href="#myAbouts">About</a>
+                <a href="javascript:void(0)">Services</a>
+                <a href="javascript:void(0)">Works</a>
+                <a href="#footer">Contact</a>
+                <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Nav when scroll
+        <div class="nav-onScroll">
+            <div class="nav-myName">LONG</div>
+            <div class="nav-linkWrap" id="nav-linkWrap">
+                <a href="#myAbouts">About</a>
+                <a href="javascript:void(0)">Services</a>
+                <a href="javascript:void(0)">Works</a>
+                <a href="javascript:void(0)">Contact</a>
+                <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div> -->
+
+        <header class="head-Header">
+            <div class="head-Hello animate__animated animate__fadeInUp">Hello!</div>
+            <div class="head-Bio animate__animated animate__fadeInUp">
+                <div id="typed-strings">
+                    <p>I'm a UI Developer</p>
+                    <p>I'm a Junior</p>
+                    <p>I'm Quang Long</p>
+                </div>
+                <span id="typed" class="head-BioStrings"></span>
+            </div>
+            <div class="social animate__animated animate__fadeInUp">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </header>
+    </header>
+
+    <!-- About -->
+    <div id="myAbouts" class="myAbouts">
+        <div class="aboutAvatar">
+            <img src="./style/img/avatar.jpg" alt="">
+        </div>
+        <div class="about-Container">
+            <div class="about-Scripts">
+                <h1 class="aboutMe">About Me.</h1>
+                <h4 class="aboutPosi">UI WEB JUNIOR DEVELOPER</h4>
+                <p class="aboutTxt">From 2017 i have start my first !DOCTYPE HTML, then i spent four years to keep learning about website programming by myself, from last years I applied for an internship and realized my skills gap, so decided to take extra classes at a professional center to improve those lacking skills as soon as possible. With a huge dream to become a senior programmer, I continued to research, program and correct errors to fulfill the goal.</p>
+            </div>
+
+
+            <div class="skillBar">
+                <div class="containerSkills">
+                    <div class="skills html">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="containerSkills">
+                    <div class="skills css">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                </div>
+                <div class="containerSkills">
+                    <div class="skills js">
+                        <span>JavaScript</span>
+                        <span>70%</span>
+                    </div>
+                </div>
+                <div class="containerSkills">
+                    <div class="skills react">
+                        <span>ReactJS</span>
+                        <span>50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnSkills">
+                <a href="./style/files/LeQuangLongResume.pdf" download="" target="_blank"><button>Download
+                        CV</button></a>
+                <a href="#footer"><button>Contact</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="path">  
+        <div class="path-advice">
+            <div data-aos="fade-right" data-aos-delay="250" data-aos-duration="2000">"The only advice i have learning for programming</div>
+            <div data-aos="fade-left" data-aos-delay="300">is go to program." by George Hotz</div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <header>
+            <p>Project.</p>
+        </header>
+
+        <div class="project">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">CSS</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">ReactJS</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="project-grid">
+                        <a href="javascript:void(0)" data-lightbox="image-1" data-title="Testing lightbox">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-coding">
+                                    <div class="overLay">
+                                        <div class="popUp">RestfulAPI Project <br> <i class="fa fa-search"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-baking">
+                                    <div class="overLay">
+                                        <div class="popUp">Testing CSS effects project <br> <i class="fa fa-search"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-udemy">
+                                    <div class="overLay">
+                                        <div class="popUp">A fully website <br> <i class="fa fa-search"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="project-grid">
+                        <a href="javascript:void(0)">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-baking">
+                                    <div class="overLay">
+                                        <div class="popUp">Testing CSS effects project <br> <i class="fa fa-search"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="project-grid">
+                        <a href="javascript:void(0)">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-udemy">
+                                    <div class="overLay">
+                                        <div class="popUp">A fully website<br> <i class="fa fa-search"></i></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="counting">
+            <div>
+                <span class="counter countingNum">17520</span><span>H</span>
+                <div class="countingTxt">Time spent</div>
+            </div>
+            <div>
+                <span class="counter countingNum">8289</span>
+                <div class="countingTxt">Lines of code</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <header>
+            <p>Contact.</p>
+        </header>
+
+        <div class="contacts">
+            <div class="contact">
+                <i class="fa fa-map-marker-alt"></i>
+                <section>
+                    <h3>Address</h3>
+                    <p>Tran Quang Khai Street - District 1</p>
+                </section>
+            </div>
+            <div class="contact">
+                <i class="fa fa-envelope"></i>
+                <section>
+                    <h3>Mail</h3>
+                    <p>quang.long292@gmail.com</p>
+                </section>
+            </div>
+            <div class="contact">
+                <i class="fa fa-phone"></i>
+                <section>
+                    <h3>Phone</h3>
+                    <p>+84 292 85 403</p>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="toTop()" id="myBtn" title="Go to top"><i class="fa fa-arrow-alt-circle-up"></i></button>
+
+    <div class="ending"></div>
+    
+
+
+    <!-- Boostrap4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <!-- Typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- Lightbox
+    <script src="./Js/lightbox.js"></script>
+    <script src="./Js/lightbox-plus-jquery.js"></script> -->
+
+    <!-- OnScroll AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- CounterUP -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./Js/jquery.counterup.min.js"></script> 
+
+    <!-- Main -->
+    <script src="./Js/index.js"></script>
+
+    <script>
+        AOS.init();
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 40,
+            backSpeed: 20,
+            loop: true,
+        });
+    </script>
+    <script>
+        $('.counter').counterUp({
+            delay: 30,
+            time: 3000
+        });  
+    </script>
+
+</body>
+
+</html>

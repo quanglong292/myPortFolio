@@ -25,6 +25,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- OnScroll AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--SweetAlert2-->
+    <link rel="stylesheet" href="./style/sweetalert2.min.css">
 
     <!-- Main -->
     <link rel="stylesheet" href="./style/index.css">
@@ -36,28 +38,14 @@
             <div class="nav-myName " >LONG</div>
             <div class="nav-linkWrap" id="nav-linkWrap">
                 <a href="#myAbouts">About</a>
-                <a href="javascript:void(0)">Services</a>
-                <a href="javascript:void(0)">Works</a>
+                <a href="#projects">Works</a>
                 <a href="#footer">Contact</a>
+                <a id="services">Services</a>
                 <a href="javascript:void(0)" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
-
-        <!-- Nav when scroll
-        <div class="nav-onScroll">
-            <div class="nav-myName">LONG</div>
-            <div class="nav-linkWrap" id="nav-linkWrap">
-                <a href="#myAbouts">About</a>
-                <a href="javascript:void(0)">Services</a>
-                <a href="javascript:void(0)">Works</a>
-                <a href="javascript:void(0)">Contact</a>
-                <a href="javascript:void(0)" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div> -->
 
         <header class="head-Header">
             <div class="head-Hello animate__animated animate__fadeInUp">Hello!</div>
@@ -70,10 +58,10 @@
                 <span id="typed" class="head-BioStrings"></span>
             </div>
             <div class="social animate__animated animate__fadeInUp">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
+                <a href="https://www.facebook.com/qlongg/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/leqlongg/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/quanglong292" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/watch?v=8RtGlWmXGhA" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </header>
     </header>
@@ -87,7 +75,7 @@
             <div class="about-Scripts">
                 <h1 class="aboutMe">About Me.</h1>
                 <h4 class="aboutPosi">UI WEB JUNIOR DEVELOPER</h4>
-                <p class="aboutTxt">From 2017 i have start my first !DOCTYPE HTML, then i spent four years to keep learning about website programming by myself, from last years I applied for an internship and realized my skills gap, so decided to take extra classes at a professional center to improve those lacking skills as soon as possible. With a huge dream to become a senior programmer, I continued to research, program and correct errors to fulfill the goal.</p>
+                <p class="aboutTxt">From 2017 i have started my first !DOCTYPE HTML, then i spent four years to keep learning about website programming by myself, from last years I applied for an internship and realized my skills gap, so decided to take extra classes at a professional center to improve those lacking skills as soon as possible. With a huge dream to become a senior programmer, I continued to research, program and correct errors to fulfill the goal.</p>
             </div>
 
 
@@ -95,31 +83,31 @@
                 <div class="containerSkills">
                     <div class="skills html">
                         <span>HTML</span>
-                        <span>90%</span>
+                        <span>70%</span>
                     </div>
                 </div>
                 <div class="containerSkills">
                     <div class="skills css">
-                        <span>CSS</span>
-                        <span>80%</span>
+                        <span>CSS/SCSS</span>
+                        <span>70%</span>
                     </div>
                 </div>
                 <div class="containerSkills">
                     <div class="skills js">
-                        <span>JavaScript</span>
-                        <span>70%</span>
+                        <span>Javascript</span>
+                        <span>65%</span>
                     </div>
                 </div>
                 <div class="containerSkills">
                     <div class="skills react">
                         <span>ReactJS</span>
-                        <span>50%</span>
+                        <span>60%</span>
                     </div>
                 </div>
             </div>
 
             <div class="btnSkills">
-                <a href="./style/files/LeQuangLongResume.pdf" download="" target="_blank"><button>Download
+                <a href="./style/files/LE QUANG LONG - Frontent.pdf" download="" target="_blank"><button>Download
                         CV</button></a>
                 <a href="#footer"><button>Contact</button></a>
             </div>
@@ -133,7 +121,7 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <header>
             <p>Project.</p>
         </header>
@@ -289,6 +277,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="./Js/jquery.counterup.min.js"></script> 
 
+
+    <!--SweetAlert2-->
+    <script src="./Js/sweetalert2.all.min.js"></script>
+
     <!-- Main -->
     <script src="./Js/index.js"></script>
 
@@ -308,6 +300,11 @@
         });  
     </script>
 
+    <script>
+        document.getElementById("services").addEventListener("click", () => {
+            swal.fire("My only service is work for you 😄");
+        })
+    </script>
 </body>
 
 </html>

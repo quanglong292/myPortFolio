@@ -11,6 +11,7 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
 
     <!-- Font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -27,7 +28,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--SweetAlert2-->
     <link rel="stylesheet" href="./style/sweetalert2.min.css">
-
+    <!--FeatherLight-->
+    <link rel="stylesheet" href="./style/featherlight.min.css">
+    
     <!-- Main -->
     <link rel="stylesheet" href="./style/index.css">
 </head>
@@ -58,10 +61,10 @@
                 <span id="typed" class="head-BioStrings"></span>
             </div>
             <div class="social animate__animated animate__fadeInUp">
-                <a href="https://www.facebook.com/qlongg/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/leqlongg/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/quanglong292" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/watch?v=8RtGlWmXGhA" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/qlongg/" target="_blank"><i class="fab fa-facebook modernIcon"></i></a>
+                <a href="https://www.instagram.com/leqlongg/" target="_blank"><i class="fab fa-instagram modernIcon"></i></a>
+                <a href="https://github.com/quanglong292" target="_blank"><i class="fab fa-github modernIcon"></i></a>
+                <a href="https://www.youtube.com/watch?v=8RtGlWmXGhA" target="_blank"><i class="fab fa-youtube modernIcon"></i></a>
             </div>
         </header>
     </header>
@@ -144,62 +147,91 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="project-grid">
-                        <a href="javascript:void(0)" data-lightbox="image-1" data-title="Testing lightbox">
-                            <div class="project-imgWrap">
-                                <div class="projectImg-coding">
-                                    <div class="overLay">
-                                        <div class="popUp">RestfulAPI Project <br> <i class="fa fa-search"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="javascript:void(0)">
+                        <!-- href="javascript:void(0)" -->
+                        <div class="project-linkAtesting">
                             <div class="project-imgWrap">
                                 <div class="projectImg-baking">
                                     <div class="overLay">
-                                        <div class="popUp">Testing CSS effects project <br> <i class="fa fa-search"></i></div>
+                                        <div class="popUp">My Portfolio<br> 
+                                            <a href="#" data-featherlight="#myPortfolioLighbox"><i class="fa fa-search"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="javascript:void(0)">
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-coding">
+                                    <div class="overLay">
+                                        <div class="popUp" >
+                                            Udemy UI Remake 
+                                            <br>
+                                            <a href="#" data-featherlight="#udemyUiLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="project-linkAtesting">
                             <div class="project-imgWrap">
                                 <div class="projectImg-udemy">
                                     <div class="overLay">
-                                        <div class="popUp">A fully website <br> <i class="fa fa-search"></i></div>
+                                        <div class="popUp">Tix Movie App <br> 
+                                            <a href="#" data-featherlight="#reactLightbox"><i class="fa fa-search"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="project-grid">
-                        <a href="javascript:void(0)">
+                        <div class="project-linkAtesting">
                             <div class="project-imgWrap">
                                 <div class="projectImg-baking">
                                     <div class="overLay">
-                                        <div class="popUp">Testing CSS effects project <br> <i class="fa fa-search"></i></div>
+                                        <div class="popUp">My Portfolio<br> 
+                                            <a href="#" data-featherlight="#myPortfolioLighbox"><i class="fa fa-search"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-coding">
+                                    <div class="overLay">
+                                        <div class="popUp" >
+                                            Udemy UI Remake 
+                                            <br>
+                                            <a href="https://quanglong292.github.io/udemyUiCloning/" data-featherlight="#udemyUiLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="project-grid">
-                        <a href="javascript:void(0)">
+                        <div class="project-linkAtesting">
                             <div class="project-imgWrap">
                                 <div class="projectImg-udemy">
                                     <div class="overLay">
-                                        <div class="popUp">A fully website<br> <i class="fa fa-search"></i></div>
-                                        <div></div>
+                                        <div class="popUp">Tix Movie App <br> 
+                                            <a href="#" data-featherlight="#reactLightbox"><i class="fa fa-search"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,11 +240,11 @@
         <div class="counting">
             <div>
                 <span class="counter countingNum">17520</span><span>H</span>
-                <div class="countingTxt">Time spent</div>
+                <p class="countingTxt">Time spent</p>
             </div>
             <div>
                 <span class="counter countingNum">8289</span>
-                <div class="countingTxt">Lines of code</div>
+                <p class="countingTxt">Lines of code</p>
             </div>
         </div>
     </div>
@@ -251,6 +283,104 @@
 
     <div class="ending"></div>
     
+    <!--ReactProject LightBox-->
+    <div id="reactLightbox" class="featherlight featherlight-content modalProject">
+        <div class="modalCardContainer">
+            <div class="head">Tix Cinema Ticket Booking App</div>
+            <div class="info">
+                <div class="infoHead">DESCRIPTION</div>
+                <div> This is a remake of tix.vn with many useful functions: <br> - For user landing page such as: signing in, logging in, booking tickets, viewing movie details, seeing detailed showtimes from many other cinemas, reading news. <br> - For admin page: user list, delete, sort list, searching bar for users and movies.</div>
+                <div></div>
+                <div class="infoHead">
+                    TECHNOLOGIES
+                    <ul class="tech">
+                        <li>ReactJS</li>
+                        <li>HTML</li>
+                        <li>CSS/SCSS</li>
+                        <li>Javascript</li>
+                        <li>Axios</li>
+                        <li>RestfulAPI</li>
+                        <li>Single Page</li>
+                        <li>FrontAwesome</li>
+                        <li>SlickCarousel</li>
+                        <li>Bootstrap 4.6</li>
+                    </ul>
+                </div>
+                <div class="infoHead">TEAM SIZE: 1</div>
+            </div>
+            <div class="footer">
+                <!-- <div class="">LINKS</div> -->
+                <a href="javascript:void(0)" target="_blank"><i class="fab fa-github modernIcon"></i></a>
+                <a href="javascript:void(0)" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+            </div>
+        </div>
+    </div>    
+    
+    <div id="myPortfolioLighbox" class="featherlight featherlight-content modalProject">
+        <div class="modalCardContainer">
+            <div class="head">My Portfolio</div>
+            <div class="info">
+                <div class="infoHead">DESCRIPTION</div>
+                <div>"My Portfolio" is a project using many CSS techniques, including responsive-website technique, libraries, it's used for replacing the traditional resumes, and regarding as my skills.</div>
+                <div></div>
+                <div class="infoHead">
+                    TECHNOLOGIES
+                    <ul class="tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap 4.6</li>
+                        <li>FeatherLight.js</li>
+                        <li>SweatAlert2.js</li>
+                        <li>Typed.js</li>
+                        <li>CounterUP.js</li>
+                        <li>AOS.js</li>
+                        <li>Responsive</li>
+                    </ul>
+                </div>
+                <div class="infoHead">TEAM SIZE: 1</div>
+            </div>
+            <div class="footer">
+                <!-- <div class="">LINKS</div> -->
+                <a href="https://github.com/quanglong292/myPortFolio" target="_blank"><i class="fab fa-github modernIcon"></i></a>
+                <a href="javascript:void(0)" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+            </div>
+        </div>
+    </div>    
+
+    <div id="udemyUiLightBox" class="featherlight featherlight-content modalProject">
+        <div class="modalCardContainer">
+            <div class="head">Udemy UI Remake</div>
+            <div class="info">
+                <div class="infoHead">DESCRIPTION</div>
+                <div>Another project to improve styling skill with CSS, but now it's using SASS.</div>
+                <div></div>
+                <div class="infoHead">
+                    TECHNOLOGIES
+                    <ul class="tech">
+                        <li>HTML</li>
+                        <li>CSS/SCSS</li>
+                        <li>Javascript</li>
+                        <li>Grid Layout</li>
+                        <li>Bootstrap 4.6</li>
+                        <li>OwlCarousel</li>
+                        <li>Responsive</li>
+                    </ul>
+                </div>
+                <div class="infoHead">TEAM SIZE: 1</div>
+            </div>
+            <div class="footer">
+                <!-- <div class="">LINKS</div> -->
+                <a href="https://github.com/quanglong292/udemyUiCloning" target="_blank"><i class="fab fa-github modernIcon"></i></a>
+                <a href="https://quanglong292.github.io/udemyUiCloning/" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+            </div>
+        </div>
+    </div>    
+    
+    
+   
+    
+    
 
 
     <!-- Boostrap4 -->
@@ -280,7 +410,9 @@
 
     <!--SweetAlert2-->
     <script src="./Js/sweetalert2.all.min.js"></script>
-
+    
+    <!--FeatherLight-->
+    <script src="./Js/featherlight.min.js"></script>
     <!-- Main -->
     <script src="./Js/index.js"></script>
 

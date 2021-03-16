@@ -11,6 +11,16 @@ html {
   scroll-behavior: smooth;
   /* height: 1080px; */
 }
+.modernIcon {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(20, 19, 19, 0);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 10px;
+}
 #services {
   cursor: pointer;
 }
@@ -71,16 +81,6 @@ html {
   padding-top: 10px;
   font-size: 2rem;
   font-weight: 400;
-}
-.social i {
-  width: 35px;
-  height: 35px;
-  background-color: rgba(20, 19, 19, 0);
-  border-radius: 50%;
-  color: white;
-  text-align: center;
-  line-height: 35px;
-  margin: 0 10px;
 }
 .typed-cursor {
   font-size: 2rem;
@@ -234,8 +234,59 @@ html {
   /* width: 100%; */
   margin: 0 auto;
 }
+.project-grid .project-linkAtesting {
+  margin: 0 5rem;
+}
+.project-grid .project-linkAtesting:hover .overLay {
+  opacity: 1;
+}
+.project-grid .project-linkAtesting:hover .popUp {
+  top: 50%;
+}
 .project-grid a {
   margin: 0 5rem;
+}
+.project-grid a:hover .overLay {
+  opacity: 1;
+}
+.featherlight-content {
+  width: 50%;
+}
+.featherlight-inner {
+  width: 90%;
+}
+.modalCardContainer .head {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  border-bottom: #999 solid 1px;
+  margin-bottom: 20px;
+}
+/* .modalCardContainer .head:after {
+  content: ;
+} */
+.modalCardContainer .info .infoHead{
+  color: #383638;
+  letter-spacing: 1px;
+  font-weight: 550;
+}
+.modalCardContainer .info div:nth-child(4) {
+  margin-top: 15px;
+}
+.infoHead .tech {
+  margin-left: 5%;
+  color: black;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+.modalCardContainer .footer i {
+  background-color:rgba(153, 153, 153, 0.377);
+  transition: 0.3s background-color;
+  margin: 20px 5px;
+}
+.modalCardContainer .footer i:hover {
+  background-color: black;
 }
 .project-imgWrap {
   position: relative;
@@ -255,9 +306,7 @@ html {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.project-grid a:hover .overLay {
-  opacity: 1;
-}
+
 
 .popUp {
   color: black;
@@ -287,7 +336,7 @@ html {
   width: 360px;
   height: 260px;
   background-repeat: no-repeat;
-  background: url(./img/cookies.jpg);
+  background: url(./img/myPortfolio.jfif);
   background-size: 110%;
   background-position: center;
   transition: background-size 0.3s;
@@ -300,6 +349,14 @@ html {
   background-size: 110%;
   background-position: center;
   transition: background-size 0.3s;
+}
+.projectImg-coding i, .projectImg-baking i, .projectImg-udemy i {
+  color: black;
+  transition: 0.3s all;
+  margin-top: 10px;
+}
+.projectImg-coding i:hover, .projectImg-baking i:hover, .projectImg-udemy i:hover {
+  color: #999;
 }
 .projectImg-coding:hover, .projectImg-baking:hover, .projectImg-udemy:hover {
   background-size: 120%;
@@ -314,9 +371,13 @@ html {
   text-align: center;
   font-weight: bold;
 }
+.counting div {
+  width: 25%;
+}
 .countingTxt {
   color: #748182;
   display: block;
+  line-height: 20px;
 }
 .countingNum {
   font-weight: bold;
@@ -460,7 +521,16 @@ footer {
     display: block;
     margin-top: 50px;
   }
-
+  .project-grid .project-linkAtesting {
+    margin: 10px; 
+  }
+  .counting div {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .featherlight-content {
+    width: 90%;
+  }
   /* CONTACT */
   footer {
     width: 80%;
@@ -472,6 +542,11 @@ footer {
   .contact {
     width: 100%;
     margin: 0;
+  }
+
+  /*SweetAlert2*/
+  .swal2-popup {
+    width: 70%; 
   }
 }
 

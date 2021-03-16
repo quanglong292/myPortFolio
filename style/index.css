@@ -354,6 +354,7 @@ html {
   color: black;
   transition: 0.3s all;
   margin-top: 10px;
+  cursor: pointer;
 }
 .projectImg-coding i:hover, .projectImg-baking i:hover, .projectImg-udemy i:hover {
   color: #999;

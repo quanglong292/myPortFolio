@@ -232,7 +232,7 @@ html {
   display: flex;
   justify-content: center;
   /* width: 100%; */
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 .project-grid .project-linkAtesting {
   margin: 0 5rem;
@@ -319,52 +319,59 @@ html {
   transform: translate(-50%, -50%);
   text-align: center;
   transition: top 0.5s;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .project-grid a:hover .popUp {
   top: 50%;
 }
 .projectImg-coding {
-  width: 360px;
-  height: 260px;
-  background-repeat: no-repeat;
-  background: url(./img/coding.jpg);
-  background-size: 110%;
-  background-position: center;
-  transition: background-size 0.3s;
+  background:url(./img/coding.jpg);
 }
 .projectImg-baking {
-  width: 360px;
-  height: 260px;
-  background-repeat: no-repeat;
-  background: url(./img/myPortfolio.jfif);
-  background-size: 110%;
-  background-position: center;
-  transition: background-size 0.3s;
+  background:url(./img/myPortfolio.jfif);
 }
 .projectImg-udemy {
+  background:url(./img/udemy.jpg);
+}
+.projectImg-toDoList {
+  background:url("https://images.unsplash.com/photo-1585432959389-67f059cf1e41?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.projectImg-hrm {
+background:url(./img/hrm.jfif);
+}
+.projectImg-weatherApp {
+background:url(./img/weatherApp.jfif);
+}
+
+.projectImg-toDoList, .projectImg-hrm, .projectImg-weatherApp,  .projectImg-coding, .projectImg-baking, .projectImg-udemy{
   width: 360px;
   height: 260px;
   background-repeat: no-repeat;
-  background: url(./img/udemy.jpg);
   background-size: 110%;
   background-position: center;
   transition: background-size 0.3s;
 }
-.projectImg-coding i, .projectImg-baking i, .projectImg-udemy i {
+
+.projectImg-coding i, .projectImg-baking i, .projectImg-udemy i, .projectImg-toDoList i, .projectImg-hrm i, .projectImg-weatherApp i{
   color: black;
-  transition: 0.3s all;
+  transition: 0.3s padding ;
   margin-top: 10px;
+  font-size: 13px;
   cursor: pointer;
 }
-.projectImg-coding i:hover, .projectImg-baking i:hover, .projectImg-udemy i:hover {
-  color: #999;
+.projectImg-coding i:hover, .projectImg-baking i:hover, .projectImg-udemy i:hover, .projectImg-toDoList i:hover, .projectImg-hrm i:hover, .projectImg-weatherApp i:hover {
+  background-color: #383638;
+  padding: 15px;
+  line-height: 10px;
+  border-radius: 50%;
+  color: whitesmoke;
 }
-.projectImg-coding:hover, .projectImg-baking:hover, .projectImg-udemy:hover {
+.projectImg-coding:hover, .projectImg-baking:hover, .projectImg-udemy:hover, .projectImg-toDoList:hover, .projectImg-hrm:hover, .projectImg-weatherApp:hover {
   background-size: 120%;
   background-position: center;
   transition: background-size 0.5s;
 }
-
 .counting {
   margin-top: 100px;
   display: flex;
@@ -445,6 +452,80 @@ footer {
   background: radial-gradient(circle, rgba(40,45,69,1) 56%, rgba(98,93,94,1) 100%);
 }
 
+/*404 ERROR*/
+
+.page404 {
+  /* display: flex; */
+  position: relative;
+  height: 100%;
+}
+.page404container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page404 i {
+  position: absolute;
+  left: -55%;
+  top: -135%;
+  font-size: 70px;
+  background-color: rgba(123, 125, 126, 0.089);
+  padding: 150px;
+  border-radius: 50%;
+}
+.title404 {
+  z-index: 2;
+  /* line-height: 50px; */
+}
+.title404 a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s text-decoration;
+}
+.title404 a:hover {
+  text-decoration: underline;
+}/*404 ERROR*/
+
+.page404 {
+  /* display: flex; */
+  position: relative;
+  height: 100%;
+}
+.page404container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page404 i {
+  position: absolute;
+  left: -55%;
+  top: -135%;
+  font-size: 70px;
+  background-color: rgba(123, 125, 126, 0.089);
+  padding: 150px;
+  border-radius: 50%;
+}
+.title404 {
+  z-index: 2;
+  /* line-height: 50px; */
+}
+.title404 a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s text-decoration;
+}
+.title404 a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 600px) {
   .nav-linkWrap a {
     display: none;
@@ -503,17 +584,7 @@ footer {
   .project-grid {
     display: block;
   }
-  .projectImg-coding {
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-  }
-  .projectImg-baking {
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-  }
-  .projectImg-udemy {
+  .projectImg-coding, .projectImg-baking, .projectImg-udemy, .projectImg-toDoList, .projectImg-hrm, .projectImg-weatherApp {
     width: 100%;
     height: 250px;
     background-size: cover;
@@ -531,6 +602,9 @@ footer {
   }
   .featherlight-content {
     width: 90%;
+  }
+  .nav-link {
+    padding: 5px;
   }
   /* CONTACT */
   footer {
@@ -569,3 +643,4 @@ footer {
   margin-top: 30%;
   font-weight: bold;
 }
+

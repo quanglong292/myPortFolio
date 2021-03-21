@@ -14,9 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
 
     <!-- Font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <!-- Boostrap4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -36,6 +34,7 @@
 </head>
 
 <body>
+    <!--Header-->
     <header class="myHead">
         <div class="myNav animate__animated animate__fadeInUp">
             <div class="nav-myName " >LONG</div>
@@ -54,7 +53,7 @@
             <div class="head-Hello animate__animated animate__fadeInUp">Hello!</div>
             <div class="head-Bio animate__animated animate__fadeInUp">
                 <div id="typed-strings">
-                    <p>I'm a UI Developer</p>
+                    <p>I'm a UI Web Developer</p>
                     <p>I'm a Fresher</p>
                     <p>I'm Quang Long</p>
                 </div>
@@ -110,7 +109,7 @@
             </div>
 
             <div class="btnSkills">
-                <a href="./style/files/LE QUANG LONG - Frontent.pdf" download="" target="_blank"><button>Download
+                <a href="./style/files/LE QUANG LONG.pdf" download="" target="_blank"><button>Download
                         CV</button></a>
                 <a href="#footer"><button>Contact</button></a>
             </div>
@@ -143,6 +142,10 @@
                     <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
                         aria-controls="pills-contact" aria-selected="false">ReactJS</a>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="javascript-tab" data-toggle="pill" href="#javascriptPane" role="tab"
+                        aria-controls="javascriptPane" aria-selected="false">Javascript</a>
+                </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -165,7 +168,7 @@
                                 <div class="projectImg-coding">
                                     <div class="overLay">
                                         <div class="popUp" >
-                                            Udemy UI Remake 
+                                            Udemy UI 
                                             <br>
                                             <a data-featherlight="#udemyUiLightBox"><i class="fa fa-search"></i></a>
                                         </div>
@@ -173,21 +176,58 @@
                                 </div>
                             </div>
                         </div>
-
-                        
-
                         <div class="project-linkAtesting">
                             <div class="project-imgWrap">
                                 <div class="projectImg-udemy">
                                     <div class="overLay">
                                         <div class="popUp">Tix Movie App <br> 
-                                            <a data-featherlight="#reactLightbox"><i class="fa fa-search"></i></a>
+                                            <a data-featherlight="#reactLightbox"><i class="fa fa-search pendingProject"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="project-grid">
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-toDoList">
+                                    <div class="overLay">
+                                        <div class="popUp">TodoList<br> 
+                                            <!--Should be pop up lightbox when click this <a> tag -->
+                                            <a data-featherlight="#todoListLightBox"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-hrm">
+                                    <div class="overLay">
+                                        <div class="popUp" >
+                                            HRM App
+                                            <br>
+                                            <a data-featherlight="#hrmLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-weatherApp">
+                                    <div class="overLay">
+                                        <div class="popUp">Weather App <br> 
+                                            <a data-featherlight="#weatherLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -209,7 +249,7 @@
                                 <div class="projectImg-coding">
                                     <div class="overLay">
                                         <div class="popUp" >
-                                            Udemy UI Remake 
+                                            Udemy UI  
                                             <br>
                                             <a data-featherlight="#udemyUiLightBox"><i class="fa fa-search"></i></a>
                                         </div>
@@ -232,6 +272,48 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="javascriptPane" role="tabpanel" aria-labelledby="javascript-tab">
+                    <div class="project-grid">
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-toDoList">
+                                    <div class="overLay">
+                                        <div class="popUp">TodoList<br> 
+                                            <!--Should be pop up lightbox when click this <a> tag -->
+                                            <a data-featherlight="#todoListLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-hrm">
+                                    <div class="overLay">
+                                        <div class="popUp" >
+                                            HRM App
+                                            <br>
+                                            <a data-featherlight="#hrmLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-linkAtesting">
+                            <div class="project-imgWrap">
+                                <div class="projectImg-weatherApp">
+                                    <div class="overLay">
+                                        <div class="popUp">Weather App <br> 
+                                            <a data-featherlight="#weatherLightBox"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -283,7 +365,7 @@
 
     <div class="ending"></div>
     
-    <!--ReactProject LightBox-->
+    <!--LightBox Modal-->
     <div id="reactLightbox" class="featherlight featherlight-content modalProject">
         <div class="modalCardContainer">
             <div class="head">Tix Cinema Ticket Booking App</div>
@@ -310,8 +392,8 @@
             </div>
             <div class="footer">
                 <!-- <div class="">LINKS</div> -->
-                <a href="javascript:void(0)" target="_blank"><i class="fab fa-github modernIcon"></i></a>
-                <a href="javascript:void(0)" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+                <a href="./404page.html"><i class="fab fa-github modernIcon"></i></a>
+                <a href="./404page.html"><i class="fa fa-link modernIcon"></i></a>
             </div>
         </div>
     </div>    
@@ -343,7 +425,7 @@
             <div class="footer">
                 <!-- <div class="">LINKS</div> -->
                 <a href="https://github.com/quanglong292/myPortFolio" target="_blank"><i class="fab fa-github modernIcon"></i></a>
-                <a href="javascript:void(0)" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+                <a href="#"><i class="fa fa-link modernIcon"></i></a>
             </div>
         </div>
     </div>    
@@ -376,9 +458,85 @@
             </div>
         </div>
     </div>    
-    
-    
-   
+
+    <div id="hrmLightBox" class="featherlight featherlight-content modalProject">
+        <div class="modalCardContainer">
+            <div class="head">Simple HRM App</div>
+            <div class="info">
+                <div class="infoHead">DESCRIPTION</div>
+                <div>A project that using Javascript OOP to create many useful HR manage functions like: adding, deleting, sorting, updating list from API.</div>
+                <div class="infoHead">
+                    TECHNOLOGIES
+                    <ul class="tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Vanilla Javascript</li>
+                        <li>Axios</li>
+                        <li>MockAPI</li>
+                        <li>Bootstrap 4 Dashboard Template</li>
+                    </ul>
+                </div>
+                <div class="infoHead">TEAM SIZE: 1</div>
+            </div>
+            <div class="footer">
+                <!-- <div class="">LINKS</div> -->
+                <a href="https://github.com/quanglong292/quanLyNhanVien" target="_blank"><i class="fab fa-github modernIcon"></i></a>
+                <a href="https://quanglong292.github.io/quanLyNhanVien/" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+            </div>
+        </div>
+    </div>  
+
+    <div id="weatherLightBox" class="featherlight featherlight-content modalProject">
+        <div class="modalCardContainer">
+            <div class="head">Simple Weather App</div>
+            <div class="info">
+                <div class="infoHead">DESCRIPTION</div>
+                <div>Using <i>openweathermap.org </i> API to create this simple app, but still have some functions like duplicate data checking, checking valid city name, descriping weather by openweathermap's icon.</div>
+                <div class="infoHead">
+                    TECHNOLOGIES
+                    <ul class="tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Vanilla Javascript</li>
+                        <li>Fetch API</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>OpenWeatherMap Icon</li>
+                    </ul>
+                </div>
+                <div class="infoHead">TEAM SIZE: 1</div>
+            </div>
+            <div class="footer">
+                <!-- <div class="">LINKS</div> -->
+                <a href="https://github.com/quanglong292/weatherApp" target="_blank"><i class="fab fa-github modernIcon"></i></a>
+                <a href="https://quanglong292.github.io/weatherApp/" target="_blank"><i class="fa fa-link modernIcon"></i></a>
+            </div>
+        </div>
+    </div> 
+
+    <div id="todoListLightBox" class="featherlight featherlight-content modalProject">
+        <div class="modalCardContainer">
+            <div class="head">Todolist App</div>
+            <div class="info">
+                <div class="infoHead">DESCRIPTION</div>
+                <div>It's a todolist, but for now it contains some functions that other app might be doesn't have like restore todo that completed, list of completed todo, delete todolist</div>
+                <div class="infoHead">
+                    TECHNOLOGIES
+                    <ul class="tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Vanilla Javascript</li>
+                        <li>OOP</li>
+                    </ul>
+                </div>
+                <div class="infoHead">TEAM SIZE: 1</div>
+            </div>
+            <div class="footer">
+                <!-- <div class="">LINKS</div> -->
+                <a href="./404page.html" ><i class="fa fa-link modernIcon"></i></a>
+                <a href="./404page.html" ><i class="fab fa-github modernIcon"></i></a>
+            </div>
+        </div>
+    </div> 
     
     
 
@@ -430,7 +588,7 @@
     <script>
         document.getElementById("services").addEventListener("click", () => {
             swal.fire("My only service is work for you 😄");
-        })
+        });
     </script>
     <!-- Main -->
     <script src="./Js/index.js"></script>

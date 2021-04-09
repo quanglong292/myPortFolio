@@ -332,16 +332,16 @@ html {
   background:url(./img/myPortfolio.jfif);
 }
 .projectImg-udemy {
-  background:url(./img/udemy.jpg);
+  background:url(https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);
 }
 .projectImg-toDoList {
-  background:url("https://images.unsplash.com/photo-1585432959389-67f059cf1e41?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background:url(https://www.any.do/v4/images/windows/calendar@2x.png);
 }
 .projectImg-hrm {
-background:url(./img/hrm.jfif);
+background:url(https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1348&q=80);
 }
 .projectImg-weatherApp {
-background:url(./img/weatherApp.jfif);
+background:url(https://apps-cdn.athom.com/app/nu.baretta.openweathermap/1/38df2fce-5388-47c9-bbf6-ba8052f6c2cb/assets/images/large.png);
 }
 
 .projectImg-toDoList, .projectImg-hrm, .projectImg-weatherApp,  .projectImg-coding, .projectImg-baking, .projectImg-udemy{

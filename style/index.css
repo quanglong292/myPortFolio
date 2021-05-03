@@ -273,6 +273,11 @@ html {
 .modalCardContainer .info div:nth-child(4) {
   margin-top: 15px;
 }
+.modalCardContainer .info .codeLine {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  padding: 10px;
+}
 .infoHead .tech {
   margin-left: 5%;
   color: black;
@@ -343,8 +348,11 @@ background:url(https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixli
 .projectImg-weatherApp {
 background:url(https://apps-cdn.athom.com/app/nu.baretta.openweathermap/1/38df2fce-5388-47c9-bbf6-ba8052f6c2cb/assets/images/large.png);
 }
+.projectImg-vue {
+  background:url(https://miro.medium.com/max/1400/1*2kmYJdNvUCAU3ufDR0HTmA.jpeg);
+}
 
-.projectImg-toDoList, .projectImg-hrm, .projectImg-weatherApp,  .projectImg-coding, .projectImg-baking, .projectImg-udemy{
+.projectImg-toDoList, .projectImg-hrm, .projectImg-weatherApp,  .projectImg-coding, .projectImg-baking, .projectImg-udemy, .projectImg-vue{
   width: 360px;
   height: 260px;
   background-repeat: no-repeat;
@@ -353,21 +361,21 @@ background:url(https://apps-cdn.athom.com/app/nu.baretta.openweathermap/1/38df2f
   transition: background-size 0.3s;
 }
 
-.projectImg-coding i, .projectImg-baking i, .projectImg-udemy i, .projectImg-toDoList i, .projectImg-hrm i, .projectImg-weatherApp i{
+.projectImg-coding i, .projectImg-baking i, .projectImg-udemy i, .projectImg-toDoList i, .projectImg-hrm i, .projectImg-weatherApp i, .projectImg-vue i{
   color: black;
   transition: 0.3s padding ;
   margin-top: 10px;
   font-size: 13px;
   cursor: pointer;
 }
-.projectImg-coding i:hover, .projectImg-baking i:hover, .projectImg-udemy i:hover, .projectImg-toDoList i:hover, .projectImg-hrm i:hover, .projectImg-weatherApp i:hover {
+.projectImg-coding i:hover, .projectImg-baking i:hover, .projectImg-udemy i:hover, .projectImg-toDoList i:hover, .projectImg-hrm i:hover, .projectImg-weatherApp i:hover, .projectImg-vue i:hover{
   background-color: #383638;
   padding: 15px;
   line-height: 10px;
   border-radius: 50%;
   color: whitesmoke;
 }
-.projectImg-coding:hover, .projectImg-baking:hover, .projectImg-udemy:hover, .projectImg-toDoList:hover, .projectImg-hrm:hover, .projectImg-weatherApp:hover {
+.projectImg-coding:hover, .projectImg-baking:hover, .projectImg-udemy:hover, .projectImg-toDoList:hover, .projectImg-hrm:hover, .projectImg-weatherApp:hover, .projectImg-vue:hover{
   background-size: 120%;
   background-position: center;
   transition: background-size 0.5s;

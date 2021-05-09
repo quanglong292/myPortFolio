@@ -349,14 +349,14 @@ background:url(https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixli
 background:url(https://apps-cdn.athom.com/app/nu.baretta.openweathermap/1/38df2fce-5388-47c9-bbf6-ba8052f6c2cb/assets/images/large.png);
 }
 .projectImg-vue {
-  background:url(https://miro.medium.com/max/1400/1*2kmYJdNvUCAU3ufDR0HTmA.jpeg);
+  background:url(https://mevn-public.s3-ap-southeast-1.amazonaws.com/marketenterprise.vn/wp-images/2021/04/06170614/vuejs.png);
 }
 
 .projectImg-toDoList, .projectImg-hrm, .projectImg-weatherApp,  .projectImg-coding, .projectImg-baking, .projectImg-udemy, .projectImg-vue{
   width: 360px;
   height: 260px;
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 100%;
   background-position: center;
   transition: background-size 0.3s;
 }
@@ -376,7 +376,7 @@ background:url(https://apps-cdn.athom.com/app/nu.baretta.openweathermap/1/38df2f
   color: whitesmoke;
 }
 .projectImg-coding:hover, .projectImg-baking:hover, .projectImg-udemy:hover, .projectImg-toDoList:hover, .projectImg-hrm:hover, .projectImg-weatherApp:hover, .projectImg-vue:hover{
-  background-size: 120%;
+  background-size: 115%;
   background-position: center;
   transition: background-size 0.5s;
 }

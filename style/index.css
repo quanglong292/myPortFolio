@@ -94,7 +94,7 @@ html {
 }
 
 .aboutAvatar {
-  width: 35%;
+  width: 38%;
   box-shadow: 5px 5px 10px black;
   margin-right: 5rem;
   height: 100%;
@@ -173,6 +173,11 @@ html {
 } 
 .react {
   width: 60%;
+  background-color: #383638;
+}
+
+.vue {
+  width: 70%;
   background-color: #383638;
 }
 

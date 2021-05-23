@@ -44,6 +44,27 @@ html {
   margin: 0 auto;
   padding-top: 2rem;
   /* width: 70%; */
+  transition: 0.5s;
+}
+.sticky {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgb(0, 0, 0, 0.5);
+  z-index: 100;
+  color: black;
+}
+.sticky .nav-linkWrap {
+  align-items: center;
+  display: flex;
+}
+.sticky .nav-linkWrap a {
+  color: black;
 }
 .nav-onScroll {
   display: none;
@@ -336,7 +357,7 @@ html {
   top: 50%;
 }
 .projectImg-coding {
-  background:url(./img/coding.jpg);
+  background:url(./img/about_banner.png);
 }
 .projectImg-baking {
   background:url(./img/myPortfolio.jfif);

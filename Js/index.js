@@ -11,7 +11,7 @@ function myFunction() {
 
 // ToTop btn
 mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(), stickyNav()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -24,4 +24,17 @@ function scrollFunction() {
 function toTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
+}
+
+
+// Sticky navigation bar
+var navbar = document.getElementById("myNavi");
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= 200) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
